@@ -1,7 +1,7 @@
 {{- define "content" -}}
-<h1 id="title" class="font-bold mt-8 mb-4 text-2xl">{{ .Title }}</h1>
-{{- partial "toc.html" . -}}
 
+{{- partial "toc.html" . -}}
+<h1 id="title" class="font-bold mt-8 mb-4 text-2xl">{{ .Title }}</h1>
 {{ if .Content }}
     <div class="my-7">
         {{- partial "content.html" . -}}
